@@ -1,6 +1,6 @@
 import React, { useEffect, Suspense, lazy } from 'react';
 import { 
-  HashRouter as Router, 
+  BrowserRouter, 
   Routes, 
   Route, 
   Navigate 
@@ -94,7 +94,7 @@ export default function App() {
       <Toaster position="top-right" richColors />
       <TenantResolver>
         <AppInitializer />
-        <Router>
+        <BrowserRouter>
           <OfflineBanner />
           <InstallPrompt />
           <Suspense fallback={<div className="min-h-screen bg-background flex items-center justify-center"><div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin" /></div>}>
@@ -181,7 +181,7 @@ export default function App() {
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Suspense>
-        </Router>
+        </BrowserRouter>
       </TenantResolver>
     </QueryClientProvider>
   );
