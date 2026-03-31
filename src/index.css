@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Libre Baskerville", "DM Serif Display", serif;
+
+  --color-doctor-accent: #E8A838;
+  --color-doctor-sidebar: #1C2333;
+  --color-doctor-sidebar-hover: #2A3447;
+
+  --color-primary: #1B2A4A;
+  --color-primary-foreground: #FAFAF8;
+  
+  --color-accent: #7BAE7F;
+  --color-accent-foreground: #1B2A4A;
+
+  --color-surface: #FAFAF8;
+  --color-surface-muted: #F1F1EF;
+  
+  --color-success: #4A7C59;
+  --color-warning: #D4A373;
+  --color-error: #BC4749;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* shadcn/ui variables */
+  --background: 0 0% 98%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 221.2 46.3% 20.2%; /* #1B2A4A */
+  --primary-foreground: 40 14.3% 96.9%; /* #FAFAF8 */
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 125 24% 58%; /* #7BAE7F */
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-primary font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}

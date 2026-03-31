@@ -1,0 +1,5 @@
+{
+  "name": "PhysioFlow",
+  "description": "Production-grade multitenant PWA for physiotherapy clinic management with local-first sync.",
+  "requestFramePermissions": []
+}
