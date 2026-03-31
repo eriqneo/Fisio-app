@@ -20,7 +20,9 @@ export default function TenantResolver({ children }: TenantResolverProps) {
         
         // Assuming subdomain format: clinic.physioflow.app or clinic.localhost
         let slug = '';
-        if (parts.length >= 2 && parts[0] !== 'www' && !parts[0].includes('ais-dev')) {
+        const isCommonHost = hostname.includes('github.io') || hostname.includes('vercel.app') || hostname.includes('netlify.app');
+        
+        if (parts.length >= 2 && parts[0] !== 'www' && !parts[0].includes('ais-dev') && !isCommonHost) {
           slug = parts[0];
         }
 
