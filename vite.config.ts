@@ -8,6 +8,7 @@ import { visualizer } from 'rollup-plugin-visualizer';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
+    base: '/Fisio-app/',
     plugins: [
       react(), 
       tailwindcss(),
