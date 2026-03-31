@@ -32,15 +32,16 @@ export default function TenantResolver({ children }: TenantResolverProps) {
         if (slug) {
           const tenant = await tenantService.findBySlug(slug);
           if (tenant) {
-            // If tenant changed or wasn't set, we might need to logout if user doesn't belong to this tenant
-            // But for now, we just ensure the tenant context is correct
+            // Only logout if we're authenticated for a DIFFERENT clinic than the subdomain
             if (currentTenant && currentTenant.id !== tenant.id) {
-              // Tenant mismatch, logout for safety
               logout();
             }
           } else {
-            // Invalid tenant slug
-            if (currentTenant) logout();
+            // Subdomain didn't match any clinic. 
+            // This is likely a platform domain (e.g. vercel.app) or main domain.
+            // Don't logout; the app will use the tenant stored in auth state
+            // or remain in a "no-tenant" state for landing/login pages.
+            console.log('Subdomain slug does not match a clinic, ignoring subdomain resolution.');
           }
         }
       } catch (error) {
