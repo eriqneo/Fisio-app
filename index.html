@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhysioFlow</title>
+  <meta name="description" content="Production-grade physiotherapy clinic management with real-time tracking." />
+  <meta name="theme-color" content="#1B2A4A" />
+  <link rel="apple-touch-icon" href="./pwa-192x192.png" />
+  <link rel="icon" href="./favicon.ico" />
+  <script>
+    // Fix for "Cannot set property fetch of #<Window> which has only a getter"
+    // This happens when polyfills try to overwrite a read-only fetch property
+    (function () {
+      function patch(obj) {
+        try {
+          const descriptor = Object.getOwnPropertyDescriptor(obj, 'fetch');
+          if (descriptor && descriptor.configurable) {
+            const originalFetch = obj.fetch;
+            Object.defineProperty(obj, 'fetch', {
+              value: originalFetch,
+              writable: true,
+              configurable: true,
+              enumerable: true
+            });
+            return true;
+          }
+        } catch (e) {
+          return false;
+        }
+        return false;
+      }
+
+      // Try window first
+      if (!patch(window)) {
+        // If not found or not configurable on window, try Window.prototype
+        if (typeof Window !== 'undefined' && Window.prototype) {
+          patch(Window.prototype);
+        }
+      }
+
+      // Also handle the case where it might be assigned later
+      // by creating a setter that just works
+      try {
+        if (Object.getOwnPropertyDescriptor(window, 'fetch')?.configurable) {
+          let currentFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get() { return currentFetch; },
+            set(v) { currentFetch = v; },
+            configurable: true,
+            enumerable: true
+          });
+        }
+      } catch (e) { }
+    })();
+  </script>
+  <script type="module" crossorigin src="/Fisio-app/assets/index-CAnMsRd7.js"></script>
+  <link rel="stylesheet" crossorigin href="/Fisio-app/assets/index-B2nSAiwn.css">
+<link rel="manifest" href="/Fisio-app/manifest.webmanifest"></head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
