@@ -1,0 +1,110 @@
+
+> react-example@0.0.0 build
+> vite build
+
+vite v6.4.1 building for production...
+transforming...
+✓ 3921 modules transformed.
+node_modules/vm-browserify/index.js (110:11): Use of eval in "node_modules/vm-browserify/index.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+rendering chunks...
+computing gzip size...
+dist/manifest.webmanifest                             0.43 kB
+dist/index.html                                       2.17 kB │ gzip:   0.92 kB
+dist/assets/index-BGVG-Out.css                      133.35 kB │ gzip:  18.10 kB
+dist/assets/index-BbP3371Q.js                         0.05 kB │ gzip:   0.07 kB
+dist/assets/isSameDay-DoHABwbo.js                     0.14 kB │ gzip:   0.14 kB
+dist/assets/differenceInMinutes-BvRLNwJT.js           0.15 kB │ gzip:   0.15 kB
+dist/assets/isWithinInterval-DCfvTUqO.js              0.21 kB │ gzip:   0.18 kB
+dist/assets/check-_LrhuMpO.js                         0.30 kB │ gzip:   0.25 kB
+dist/assets/plus-Dk-ZCHz8.js                          0.33 kB │ gzip:   0.26 kB
+dist/assets/arrow-left-x9K4i8P2.js                    0.34 kB │ gzip:   0.27 kB
+dist/assets/arrow-up-right-BzoGm1k-.js                0.34 kB │ gzip:   0.26 kB
+dist/assets/trending-up-CmrPhFIn.js                   0.35 kB │ gzip:   0.28 kB
+dist/assets/play-B2bzZ-HR.js                          0.36 kB │ gzip:   0.29 kB
+dist/assets/info-C1lGjktA.js                          0.38 kB │ gzip:   0.28 kB
+dist/assets/pill-CcOMqzpW.js                          0.39 kB │ gzip:   0.29 kB
+dist/assets/mail-Br-9Vkee.js                          0.39 kB │ gzip:   0.31 kB
+dist/assets/target-BjYOOul_.js                        0.40 kB │ gzip:   0.27 kB
+dist/assets/upload-tdDGCWo0.js                        0.40 kB │ gzip:   0.30 kB
+dist/assets/activity-CU6Ps6I1.js                      0.41 kB │ gzip:   0.30 kB
+dist/assets/pen-DWYjR3Kz.js                           0.41 kB │ gzip:   0.31 kB
+dist/assets/history-Dtpe3nVO.js                       0.41 kB │ gzip:   0.30 kB
+dist/assets/timer-DU_ppqHz.js                         0.41 kB │ gzip:   0.29 kB
+dist/assets/user-check-BFd_I7sK.js                    0.42 kB │ gzip:   0.31 kB
+dist/assets/video-GJyAK8uA.js                         0.42 kB │ gzip:   0.32 kB
+dist/assets/chart-column-B2mcS5u2.js                  0.42 kB │ gzip:   0.30 kB
+dist/assets/circle-play-CL9_ydUt.js                   0.43 kB │ gzip:   0.32 kB
+dist/assets/funnel-CXlQNqzV.js                        0.43 kB │ gzip:   0.32 kB
+dist/assets/eye-4v87CN-u.js                           0.43 kB │ gzip:   0.31 kB
+dist/assets/map-pin-Boi_ZgK3.js                       0.43 kB │ gzip:   0.33 kB
+dist/assets/zap-DrmDLzKo.js                           0.44 kB │ gzip:   0.32 kB
+dist/assets/list-BU3cq631.js                          0.48 kB │ gzip:   0.30 kB
+dist/assets/clipboard-check-DRzWJOK8.js               0.48 kB │ gzip:   0.34 kB
+dist/assets/user-plus-CoBpMoa3.js                     0.48 kB │ gzip:   0.34 kB
+dist/assets/printer-B9ZKURr3.js                       0.49 kB │ gzip:   0.34 kB
+dist/assets/shield-check-ico-biTw.js                  0.49 kB │ gzip:   0.36 kB
+dist/assets/phone-DvisYM7P.js                         0.50 kB │ gzip:   0.34 kB
+dist/assets/save-BNEcvvTU.js                          0.50 kB │ gzip:   0.33 kB
+dist/assets/trash-2-CxBrc8oR.js                       0.50 kB │ gzip:   0.32 kB
+dist/assets/file-text-B4PRdTud.js                     0.51 kB │ gzip:   0.32 kB
+dist/assets/stethoscope-D2KESiCY.js                   0.52 kB │ gzip:   0.34 kB
+dist/assets/layout-grid-DCykKJBe.js                   0.52 kB │ gzip:   0.30 kB
+dist/assets/sparkles-Bqvo4nE8.js                      0.67 kB │ gzip:   0.39 kB
+dist/assets/dumbbell-BEOY9AOQ.js                      0.73 kB │ gzip:   0.40 kB
+dist/assets/useDoctorDb-Bw7CysKh.js                   2.00 kB │ gzip:   0.67 kB
+dist/assets/with-selector-C63iEVtS.js                 2.33 kB │ gzip:   1.02 kB
+dist/assets/ConfirmationModal-mRbzAyCR.js             3.51 kB │ gzip:   1.50 kB
+dist/assets/DesignTokens-BeGf6RG6.js                  5.18 kB │ gzip:   1.38 kB
+dist/assets/DoctorLayout-6rBt_fgU.js                  5.58 kB │ gzip:   1.65 kB
+dist/assets/workbox-window.prod.es5-BIl4cyR9.js       5.76 kB │ gzip:   2.37 kB
+dist/assets/HEPPatientView-BLuk5FBN.js                6.21 kB │ gzip:   2.07 kB
+dist/assets/PatientPortalDashboard-BoZ_TY5t.js        6.24 kB │ gzip:   1.85 kB
+dist/assets/ExerciseVideoGallery-DLv5mz4J.js          6.34 kB │ gzip:   2.12 kB
+dist/assets/SatisfactionSurvey-B4Jvf8UR.js            6.56 kB │ gzip:   2.25 kB
+dist/assets/SessionLog-BiDwmAyu.js                    6.97 kB │ gzip:   1.99 kB
+dist/assets/Dashboard-BEzLEA5p.js                     7.23 kB │ gzip:   2.22 kB
+dist/assets/AddPatientModal-tsf-JLuK.js               8.58 kB │ gzip:   2.33 kB
+dist/assets/TreatmentPlanPage-BKXPYOyW.js             8.91 kB │ gzip:   2.08 kB
+dist/assets/IntakeForm-BtWExqJX.js                    9.13 kB │ gzip:   2.22 kB
+dist/assets/NotificationSettingsPage-B1of1ZDJ.js      9.32 kB │ gzip:   2.76 kB
+dist/assets/TherapistScheduleView-DDpGo6bX.js        10.58 kB │ gzip:   3.18 kB
+dist/assets/PatientDashboard-QlDHQM4B.js             11.23 kB │ gzip:   3.32 kB
+dist/assets/LoginPage-BuTfTmMf.js                    11.42 kB │ gzip:   3.18 kB
+dist/assets/ReceptionCheckIn-BEe3wB3D.js             11.66 kB │ gzip:   3.04 kB
+dist/assets/AuditLog-BYMgN2Dx.js                     13.30 kB │ gzip:   3.08 kB
+dist/assets/FeedbackDashboard-CrIvp4En.js            14.06 kB │ gzip:   3.66 kB
+dist/assets/TenantSettingsPage-CxJ6EuwV.js           14.43 kB │ gzip:   3.19 kB
+dist/assets/index-DjNMsfDI.js                        16.41 kB │ gzip:   5.16 kB
+dist/assets/PatientList-CHQJP9-n.js                  19.19 kB │ gzip:   4.83 kB
+dist/assets/NotificationsPage-DKwcfjCe.js            19.33 kB │ gzip:   4.71 kB
+dist/assets/PatientProfilePage-DfwehAPh.js           19.76 kB │ gzip:   4.84 kB
+dist/assets/FeedbackReport-DeOde70c.js               22.65 kB │ gzip:   7.15 kB
+dist/assets/DoctorDashboard-_tQ8Vd55.js              24.57 kB │ gzip:   6.30 kB
+dist/assets/StaffManagement-B-Xi-LB0.js              25.53 kB │ gzip:   6.17 kB
+dist/assets/BarChart-DY16M8jG.js                     28.32 kB │ gzip:   8.70 kB
+dist/assets/BookingModal-BpbCmfAw.js                 36.16 kB │ gzip:   8.20 kB
+dist/assets/MedicalHistoryWizard-C9-IyGaY.js         38.86 kB │ gzip:   9.80 kB
+dist/assets/PhysioSOAPEditor-CdiIQL6d.js             55.82 kB │ gzip:  10.62 kB
+dist/assets/CalendarView-C3uYVRc4.js                 57.57 kB │ gzip:  18.48 kB
+dist/assets/QueueBoard-kZrsyXLW.js                   62.69 kB │ gzip:  13.91 kB
+dist/assets/schemas-DvUCqk7h.js                     101.89 kB │ gzip:  30.16 kB
+dist/assets/BillingDashboard-BqEA77Eb.js            117.53 kB │ gzip:  23.20 kB
+dist/assets/TelehealthRoom-DXynF41V.js              248.54 kB │ gzip:  68.73 kB
+dist/assets/AdminDashboard-CoUWGey7.js              311.98 kB │ gzip:  65.46 kB
+dist/assets/CartesianChart-NI8SGKGF.js              330.01 kB │ gzip: 100.00 kB
+dist/assets/RichTextEditor-p1vE-6DH.js              374.68 kB │ gzip: 118.97 kB
+dist/assets/index-DLIFAVxy.js                     1,536.66 kB │ gzip: 452.01 kB
+dist/assets/HEPBuilder-CEmYkGTB.js                1,588.54 kB │ gzip: 531.03 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 36.40s
+
+PWA v1.2.0
+mode      generateSW
+precache  92 entries (5674.80 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-58bd4dca.js
